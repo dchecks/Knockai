@@ -13,5 +13,8 @@ based approaches. However, the drawback being that it is not real-time and so wo
 ## Hardware
 - You will need a connection to the knock sensor on your engine with a device that you can record with the best quality possible.
 - You will need a tunable ECU. If you don't have this, there is no point in using this software.
+- You will need a way to log your ECU parameters.
+
+## Other Requirements
 - You will need a basic understanding of how your engine responds to tuning parameters
 - You will need a basic understanding of how to use datascience tools like jupyter notebook
