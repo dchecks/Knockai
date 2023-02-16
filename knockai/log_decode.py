@@ -13,6 +13,14 @@ def log_decode(log_file):
     return df
 
 
+def clean_data(df):
+    # Remove WB_Oxy values greater than 15 as these are likely injector shut-off
+    df = df[df["WB_Oxy"] < 15]
+    # Remove Accel_ active values
+    df = df[df["Accel_"] == 'Off']
+
+    return df
+
 if __name__ == '__main__':
     df = log_decode('resources/runs/r02/r2-100k-af.txt')
     # Print all columns
